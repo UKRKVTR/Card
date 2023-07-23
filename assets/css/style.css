@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  --user-photo-width: 150px;
+}
+body {
+  font-family: sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.bg {
+  background-image: url("https://images.pexels.com/photos/3222255/pexels-photo-3222255.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  height: 150px;
+  text-align: right;
+  padding: 20px;
+  color: white;
+}
+.contentWrapper {
+  padding: 0 1em 1em;
+}
+.userImg {
+  width: var(--user-photo-width);
+  height: var(--user-photo-width);
+  object-fit: cover;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: calc((-1) * var(--user-photo-width) / 2);
+  border: 4px solid white;
+}
+.userCard {
+  width: 300px;
+  text-align: center;
+  max-width: 300px;
+  width: 100%;
+  min-width: 250px;
+  margin: 50px auto;
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px gray;
+  overflow: hidden;
+}
+.userName {
+  font-size: 1.5rem;
+  margin: 0.5em;
+}
+.userGeo {
+  font-size: 1rem;
+  margin: 0.5em;
+}
+.userJob {
+  font-size: 1.2rem;
+  margin: 0.4em;
+}
+.userExp {
+  font-size: 1rem;
+  margin: 1.2em 0;
+}
+.userSocial {
+  color: white;
+  background-color: grey;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  padding-top: 10px;
+  width: 45px;
+  height: 45px;
+}
+.userSocial + .userSocial {
+  margin-left: 40px;
+}
